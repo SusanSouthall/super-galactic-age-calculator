@@ -7,10 +7,11 @@ class Age {
     const minutes = 1000 * 60;
     const hours = minutes * 60;
     const days = hours * 24;
-    const years = days * 365;
+    const years = days * 365; // milliseconds in a year
     let age = Math.floor((Date.now() - this.birthdate.getTime())/years);
     return age;
   }
+  // current age in seconds
   birthdateToSeconds() {
     let seconds = Math.floor(Date.now() - this.birthdate.getTime())/1000;
     return seconds;
