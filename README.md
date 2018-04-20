@@ -11,7 +11,14 @@ _This application calculates a person's age based on the solar years of the plan
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Program will ** | User input:  | Output:  |
+| **Program will convert a person's age from birthdate into seconds.** | User input:  | Output:  |
+| **Program will convert a birthdate into an accurate person's age.** | User input:  | Output:  |
+| **Program will give a person's age in Mercury years.** | User input:  | Output:  |
+| **Program will give a person's age in Venus years.** | User input:  | Output:  |
+| **Program will give a person's age in Mars years.** | User input:  | Output:  |
+| **Program will give a person's age in Jupiter years.** | User input:  | Output:  |
+| **Program will give the life expectancy of a person on each planet.** | User input:  | Output:  |
+| **Program will reveal the number of years past life expectancy.** | User input:  | Output:  |
 
 
 
