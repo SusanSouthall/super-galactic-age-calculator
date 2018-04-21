@@ -4,13 +4,14 @@ describe("Age", function(){
 
   let birthdate = new Age("January 25 1974");
   let bdaySeconds = birthdate.currentAge() * 1000 * 60 * 60 * 24 * 365;
+  let age = birthdate.currentAge();
 
   it("should convert a birthdate to seconds", function(){
     expect(bdaySeconds).toEqual(1387584000000);
   });
 
   it("should convert a birthdate to a person's age", function(){
-    expect(birthdate.currantAge()).toEqual(44);
+    expect(age).toEqual(44);
   });
 
 

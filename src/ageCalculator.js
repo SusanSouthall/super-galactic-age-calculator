@@ -1,7 +1,7 @@
 class Age {
   constructor(birthdate) {
     this.birthdate = new Date(birthdate);
-
+  
   }
 
   birthdateToSeconds() {
@@ -17,7 +17,7 @@ class Age {
     // const years = days * 365; // milliseconds in a year
     let todaysDate = new Date();
     let age = todaysDate.getFullYear() - this.birthdate.getFullYear();
-    return age;
+    return this.age = age;
   }
 }
 export {Age};
