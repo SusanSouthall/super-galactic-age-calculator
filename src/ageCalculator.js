@@ -1,6 +1,7 @@
 class Age {
   constructor(birthdate) {
     this.birthdate = new Date(birthdate);
+
   }
 
   birthdateToSeconds() {
