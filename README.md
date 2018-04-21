@@ -11,8 +11,8 @@ _This application calculates a person's age based on the solar years of the plan
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Program will convert a person's age from birthdate into seconds.** | User input:  | Output:  |
-| **Program will convert a birthdate into an accurate person's age.** | User input:  | Output:  |
+| **Program will convert a person's age from birthdate into seconds.** | User input: January 25 1974| Output: 1387584000000 |
+| **Program will convert a birthdate into an accurate person's age.** | User input: January25 1974 | Output: 44 |
 | **Program will give a person's age in Mercury years.** | User input:  | Output:  |
 | **Program will give a person's age in Venus years.** | User input:  | Output:  |
 | **Program will give a person's age in Mars years.** | User input:  | Output:  |

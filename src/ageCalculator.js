@@ -14,5 +14,9 @@ class Age {
     let age = todaysDate.getFullYear() - this.birthdate.getFullYear();
     return this.age = age;
   }
+  //
+  // mercuryAge() {
+  //
+  // }
 }
 export {Age};
