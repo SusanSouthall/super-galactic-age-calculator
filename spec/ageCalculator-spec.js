@@ -22,12 +22,14 @@ describe("Age", function(){
     expect(birthdate.planetAge("mercury")).toEqual(183);
   });
 
-  it("should return a person's age in Venusian years", function(){
+  it("should return a person's age in Venus years", function(){
     expect(birthdate.planetAge("venus")).toEqual(70);
   });
 
     it("should return a person's age in Mars years", function(){
       expect(birthdate.planetAge("mars")).toEqual(23);
   });
-
+    it("should return a person's age in Jupiter years", function(){
+      expect(birthdate.planetAge("jupiter")).toEqual(3.7);
+  });
 });
