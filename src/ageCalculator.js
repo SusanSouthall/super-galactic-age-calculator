@@ -21,5 +21,6 @@ class Age {
     let mercuryAge = Math.floor(this.age/.24);
     return mercuryAge;
   }
+  
 }
 export {Age};
