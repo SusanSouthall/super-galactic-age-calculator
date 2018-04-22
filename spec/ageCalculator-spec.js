@@ -3,14 +3,14 @@ import { Age } from './../src/ageCalculator.js';
 describe("Age", function(){
 
   let birthdate = new Age("January 25 1974");
-  let bdaySeconds = birthdate.currentAge() * 1000 * 60 * 60 * 24 * 365;
+  let bdaySeconds = birthdate.currentAge() * 60 * 60 * 24 * 365;
   let age = birthdate.currentAge();
 
   // beforeEach(function() {
   //   let planetAge = birthdate.planetAge(planet);
 
   it("should convert a birthdate to seconds", function(){
-    expect(bdaySeconds).toEqual(1387584000000);
+    expect(bdaySeconds).toEqual(1387584000);
   });
 
   it("should convert a birthdate to a person's age", function(){
@@ -34,6 +34,6 @@ describe("Age", function(){
   });
 
     it("should return a person's life expectancy for Mercury", function() {
-      expect(birthdate.lifeExpectancy(80)).toEqual(150);
+      expect(birthdate.averageLifeExpectancy("mercury", 80)).toEqual(150);
   });
 });
