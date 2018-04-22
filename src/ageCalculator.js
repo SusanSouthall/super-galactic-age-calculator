@@ -46,5 +46,9 @@ class Age {
     }return lifeExpectancy;
   }
 
+  // pastLifeExpectancy(planet) {
+  //   let earth = currentAge;
+  // }
+
 }
 export {Age};
