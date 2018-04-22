@@ -50,7 +50,7 @@ describe("Age", function(){
   });
 
     it("should return the number of years past life expectancy", function() {
-      expect(birthdate.pastLifeExpectancy()).toEqual();
+      expect(birthdate.pastLifeExpectancy("jupiter", 80)).toEqual(false);
     });
 
 

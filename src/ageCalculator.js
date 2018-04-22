@@ -2,6 +2,7 @@ class Age {
   constructor(birthdate) {
     this.birthdate = new Date(birthdate);
     this.age;
+    this.lifespan;
 
   }
   // current age in seconds
@@ -20,7 +21,9 @@ class Age {
     this.age = this.currentAge();
     let earthYears;
 
-    if (planet === "mercury") {
+    if (planet === "earth") {
+      earthYears = Math.floor(this.age);
+    }else if (planet === "mercury") {
       earthYears = Math.floor(this.age/.24);
     }else if (planet === "venus") {
       earthYears = Math.floor(this.age/.62);
@@ -35,7 +38,9 @@ class Age {
     this.age = this.planetAge(planet);
     let lifeExpectancy;
 
-    if (planet === "mercury") {
+    if (planet === "earth") {
+      lifeExpectancy = Math.floor(maxAge - this.age);
+    }else if (planet === "mercury") {
       lifeExpectancy = Math.floor((maxAge/.24) - this.age);
     }else if (planet === "venus") {
       lifeExpectancy = Math.floor((maxAge/.62) - this.age);
@@ -46,9 +51,15 @@ class Age {
     }return lifeExpectancy;
   }
 
-  // pastLifeExpectancy(planet) {
-  //   let earth = currentAge;
-  // }
+  pastLifeExpectancy(planet, age) {
+    // let earth = this.currentAge();
+    this.lifespan = this.averageLifeExpectancy(planet, age);
+    if(this.lifespan <= 0) {
+      return true;
+    }else {
+      return false;
+    }
+  }
 
 }
 export {Age};
