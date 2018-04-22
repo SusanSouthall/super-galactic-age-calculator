@@ -31,13 +31,17 @@ class Age {
     }return earthYears;
   }
 
-  averageLifeExpectancy(planet, age) {
+  averageLifeExpectancy(planet, maxAge) {
     this.age = this.planetAge(planet);
     let lifeExpectancy;
 
     if (planet === "mercury") {
-      lifeExpectancy = Math.floor((age/.24) - this.age);
+      lifeExpectancy = Math.floor((maxAge/.24) - this.age);
+    }else if (planet === "venus") {
+      lifeExpectancy = Math.floor((maxAge/.62) - this.age);
+
     }return lifeExpectancy;
+  
 
   }
 
