@@ -25,9 +25,9 @@ class Age {
       earthYears = Math.floor(this.age/.24);
     }else if (planet === "venus") {
       earthYears = Math.floor(this.age/.62);
+    }else if (planet === "mars") {
+      earthYears = Math.floor(this.age/1.88);
     }return earthYears;
-    // }else if (planet === "mars") {
-    //   earthYears = Math.floor(this.age/1.88);
     // }else if (planet === "jupiter") {
     //   earthYears = Math.floor(this.age/11.86);
   }
