@@ -16,11 +16,32 @@ class Age {
     return age;
   }
 
-  mercury() {
+  planetAge(planet) {
     this.age = this.currentAge();
-    let mercuryAge = Math.floor(this.age/.24);
-    return mercuryAge;
+    let earthYears;
+    // let planetAge = Math.floor(this.age/earthYears);
+
+    if (planet === "mercury") {
+      earthYears = Math.floor(this.age/.24);
+    }else if (planet === "venus") {
+      earthYears = Math.floor(this.age/.62);
+    }return earthYears;
+    // }else if (planet === "mars") {
+    //   earthYears = Math.floor(this.age/1.88);
+    // }else if (planet === "jupiter") {
+    //   earthYears = Math.floor(this.age/11.86);
   }
-  
+
+    // if (planet === "mercury") {
+    //   earthYears = .24;
+    // }else if (planet === "venus") {
+    //   earthYears = .62;
+    // }else if (planet === "mars") {
+    //   earthYears = 1.88;
+    // }else if (planet === "jupiter") {
+    //   earthYears = 11.86;
+     // }
+
+
 }
 export {Age};
