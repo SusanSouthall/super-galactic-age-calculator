@@ -15,9 +15,9 @@ describe("Age", function(){
     expect(age).toEqual(44);
   });
 
-  it("should return a person's age im Mercury years", function(){
+  it("should return a person's age in Mercury years", function(){
     expect(mercuryAge).toEqual(183);
-  })
+  });
 
 
 
