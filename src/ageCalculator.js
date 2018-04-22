@@ -3,18 +3,17 @@ class Age {
     this.birthdate = new Date(birthdate);
     this.age;
     this.lifespan;
+  }
 
-  }
-  // current age in seconds
-  birthdateToSeconds() {
-    let todaysDate = new Date();
-    let seconds = Math.round(todaysDate - this.birthdate);
-    return seconds;
-  }
   currentAge() {
     let todaysDate = new Date();
     let age = todaysDate.getFullYear() - this.birthdate.getFullYear();
     return age;
+  }
+
+  birthdateToSeconds() {
+    let seconds = this.currentAge() * 60 * 60 * 24 * 365;
+    return seconds;
   }
 
   planetAge(planet) {
@@ -52,14 +51,13 @@ class Age {
   }
 
   pastLifeExpectancy(planet, age) {
-    // let earth = this.currentAge();
     this.lifespan = this.averageLifeExpectancy(planet, age);
+    let extraLives = Math.abs(this.lifespan).toString();
     if(this.lifespan <= 0) {
-      return true;
+      return `You have lived ${extraLives} years past your life expectancy.`
     }else {
-      return false;
+      return `You still have at least ${extraLives} years until your life expectancy.`
     }
   }
-
 }
 export {Age};

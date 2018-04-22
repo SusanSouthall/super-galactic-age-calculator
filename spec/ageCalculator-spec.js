@@ -3,11 +3,8 @@ import { Age } from './../src/ageCalculator.js';
 describe("Age", function(){
 
   let birthdate = new Age("January 25 1974");
-  let bdaySeconds = birthdate.currentAge() * 60 * 60 * 24 * 365;
+  let bdaySeconds = birthdate.birthdateToSeconds();
   let age = birthdate.currentAge();
-
-  // beforeEach(function() {
-  //   let planetAge = birthdate.planetAge(planet);
 
   it("should convert a birthdate to seconds", function(){
     expect(bdaySeconds).toEqual(1387584000);
@@ -18,7 +15,6 @@ describe("Age", function(){
   });
 
   it("should return a person's age in Mercury years", function(){
-    // planet = "mercury";
     expect(birthdate.planetAge("mercury")).toEqual(183);
   });
 
@@ -29,6 +25,7 @@ describe("Age", function(){
     it("should return a person's age in Mars years", function(){
       expect(birthdate.planetAge("mars")).toEqual(23);
   });
+
     it("should return a person's age in Jupiter years", function(){
       expect(birthdate.planetAge("jupiter")).toEqual(3);
   });
@@ -50,9 +47,6 @@ describe("Age", function(){
   });
 
     it("should return the number of years past life expectancy", function() {
-      expect(birthdate.pastLifeExpectancy("jupiter", 80)).toEqual(false);
+      expect(birthdate.pastLifeExpectancy("mercury", 40)).toEqual("You have lived 17 years past your life expectancy.");
     });
-
-
-
 });

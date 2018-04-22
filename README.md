@@ -11,14 +11,14 @@ _This application calculates a person's age based on the solar years of the plan
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Program will convert a person's age from birthdate into seconds.** | User input: January 25 1974| Output: 1387584000000 |
-| **Program will convert a birthdate into an accurate person's age.** | User input: January25 1974 | Output: 44 |
-| **Program will give a person's age in Mercury years.** | User input:  | Output:  |
-| **Program will give a person's age in Venus years.** | User input:  | Output:  |
-| **Program will give a person's age in Mars years.** | User input:  | Output:  |
-| **Program will give a person's age in Jupiter years.** | User input:  | Output:  |
-| **Program will give the life expectancy of a person on each planet.** | User input:  | Output:  |
-| **Program will reveal the number of years past life expectancy.** | User input:  | Output:  |
+| **Program will convert a person's age from birthdate into seconds.** | User input: January 25 1974| Output: 1387584000 |
+| **Program will convert a birthdate into an accurate person's age.** | User input: January 25 1974 | Output: 44 |
+| **Program will give a person's age in Mercury years.** | User input: 44 | Output: 183 |
+| **Program will give a person's age in Venus years.** | User input:  44| Output: 70 |
+| **Program will give a person's age in Mars years.** | User input: 44 | Output: 23 |
+| **Program will give a person's age in Jupiter years.** | User input: 44 | Output: 3 |
+| **Program will give the life expectancy of a person on each planet.** | User input: "mercury", 80 | Output: 150 |
+| **Program will reveal the number of years past life expectancy.** | User input: "mercury", 40 | Output: "You have lived 17 years past your life expectancy." |
 
 
 
