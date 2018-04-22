@@ -30,6 +30,6 @@ describe("Age", function(){
       expect(birthdate.planetAge("mars")).toEqual(23);
   });
     it("should return a person's age in Jupiter years", function(){
-      expect(birthdate.planetAge("jupiter")).toEqual(3.7);
+      expect(birthdate.planetAge("jupiter")).toEqual(3);
   });
 });
