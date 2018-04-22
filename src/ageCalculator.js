@@ -39,10 +39,11 @@ class Age {
       lifeExpectancy = Math.floor((maxAge/.24) - this.age);
     }else if (planet === "venus") {
       lifeExpectancy = Math.floor((maxAge/.62) - this.age);
-
+    }else if (planet === "mars") {
+      lifeExpectancy = Math.floor((maxAge/1.88) - this.age);
+    }else if (planet === "jupiter") {
+      lifeExpectancy = Math.floor((maxAge/11.86) - this.age);
     }return lifeExpectancy;
-  
-
   }
 
 }

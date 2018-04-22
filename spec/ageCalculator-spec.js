@@ -40,4 +40,15 @@ describe("Age", function(){
     it("should return a person's life expectancy for Venus", function() {
     expect(birthdate.averageLifeExpectancy("venus", 80)).toEqual(59);
   });
+
+    it("should return a person's life expectancy for Mars", function() {
+    expect(birthdate.averageLifeExpectancy("mars", 80)).toEqual(19);
+  });
+
+    it("should return a person's life expectancy for Jupiter", function() {
+    expect(birthdate.averageLifeExpectancy("jupiter", 80)).toEqual(3);
+  });
+
+
+
 });
