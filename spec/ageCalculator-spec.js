@@ -25,4 +25,9 @@ describe("Age", function(){
   it("should return a person's age in Venusian years", function(){
     expect(birthdate.planetAge("venus")).toEqual(70);
   });
+
+    it("should return a person's age in Mars years", function(){
+      expect(birthdate.planetAge("mars")).toEqual(23);
+  });
+
 });
