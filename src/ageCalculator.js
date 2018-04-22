@@ -19,7 +19,6 @@ class Age {
   planetAge(planet) {
     this.age = this.currentAge();
     let earthYears;
-    // let planetAge = Math.floor(this.age/earthYears);
 
     if (planet === "mercury") {
       earthYears = Math.floor(this.age/.24);
@@ -32,16 +31,10 @@ class Age {
     }return earthYears;
   }
 
-    // if (planet === "mercury") {
-    //   earthYears = .24;
-    // }else if (planet === "venus") {
-    //   earthYears = .62;
-    // }else if (planet === "mars") {
-    //   earthYears = 1.88;
-    // }else if (planet === "jupiter") {
-    //   earthYears = 11.86;
-     // }
-
+  // lifeExpectancy(averageAge, planet) {
+  //   let age;
+  //
+  // }
 
 }
 export {Age};

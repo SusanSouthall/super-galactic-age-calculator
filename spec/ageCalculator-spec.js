@@ -32,4 +32,8 @@ describe("Age", function(){
     it("should return a person's age in Jupiter years", function(){
       expect(birthdate.planetAge("jupiter")).toEqual(3);
   });
+
+    it("should return a person's life expectancy for Mercury", function() {
+      expect(birthdate.lifeExpectancy(80)).toEqual(150);
+  });
 });
